@@ -10,9 +10,8 @@ for c in range (1, 5):
     soma = age + soma
     media = soma / c
     sex = str(input('Sexo [M/F]: '))
-    if sex == 'F':
-        if age < 20:
-            mulheres = mulheres + 1
+    if sex == 'F' and age < 20:
+        mulheres = mulheres + 1
     if sex == 'M' and c == 1:
         maior = age
         hvelho = name
