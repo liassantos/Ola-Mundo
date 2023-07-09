@@ -1,16 +1,14 @@
-#Exe 54 (Maior e Menor da sequência)
-maior = 0
-menor = 0
-
-for pessoa in range (1, 6):
-    peso = float(input(f'Peso da {pessoa}ª pessoa: '))
-    if pessoa == 1:
-        maior = peso
-        menor = peso
+#Exe 54 (Grupo da Maioridade)
+from datetime import date
+atual = date.today().year
+adult = 0
+young = 0
+for cont_people in range (1, 8):
+    person = int(input(f'Em que ano a {cont_people}º pessoa nasceu? '))
+    if atual - person >= 18:
+       adult += 1
     else:
-        if peso > maior:
-            maior = peso
-        if peso < menor:
-            menor = peso
-print(f'O maior peso lido foi de {maior}Kg')
-print(f'O menor peso lido foi de {menor}Kg')
+       young += 1
+print(f'Tem {adult} adultos')
+print(f'Tem {young} pessoas menores de idade')
+
