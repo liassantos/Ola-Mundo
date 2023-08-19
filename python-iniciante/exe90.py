@@ -1,6 +1,6 @@
 #lê o nome, média e situação (>= 7 aprovado) + guarda no dicionário
 n = str(input('Digite o nome do aluno: '))
-m = float(input('Digite a média: '))
+m = float(input(f'Digite a média de {n}: '))
 if m >= 7:
     s = 'Aprovado'
 else:
